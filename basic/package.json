@@ -1,0 +1,17 @@
+{
+  "name": "basic",
+  "version": "1.0.0",
+  "description": "The most basic example of a pnpm workspace in a multi-package mono repo.",
+  "main": "index.js",
+  "scripts": {
+      "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "a": "workspace:*",
+    "b": "workspace:*",
+    "dayjs": "^1.11.2"
+  }
+}
