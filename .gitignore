@@ -1,1 +1,4 @@
 ﻿node_modules
+.parcel-cache
+dist
+todo.md
