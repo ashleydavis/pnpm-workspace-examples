@@ -2,6 +2,12 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+//
+// The validation code library is shared between backend and frontend 
+// without being published to npm.
+// 
+const validation = require("validation");
+
 const app = express();
 const port = 5000;
 
@@ -36,7 +42,18 @@ const todoList = [
 // Adds an item to the todo list.
 //
 app.post("/todo", (req, res) => {
-    todoList.push(req.body.todoItem);
+
+    const todoItem = req.body.todoItem;
+    const result = validation.validateTodo(todoItem)
+    if (!result.valid) {
+        res.status(400).json(result);
+        return;
+    }
+
+    //
+    // The todo item is valid, add it to the todo list.
+    //
+    todoList.push(todoItem);
     res.sendStatus(200);
 });
 

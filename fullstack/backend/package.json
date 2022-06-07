@@ -8,14 +8,15 @@
         "start:dev": "nodemon src/index.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "ashley@codecapers.com.au",
     "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.16"
+    },
     "dependencies": {
         "body-parser": "^1.20.0",
         "cors": "^2.8.5",
-        "express": "^4.18.1"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.16"
+        "express": "^4.18.1",
+        "validation": "workspace:*"
     }
 }

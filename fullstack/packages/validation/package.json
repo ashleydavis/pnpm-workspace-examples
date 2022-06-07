@@ -1,0 +1,11 @@
+{
+  "name": "validation",
+  "version": "1.0.0",
+  "description": "A code library for validation, reusable in the frontend and backend.",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "ashley@codecapers.com.au",
+  "license": "MIT"
+}

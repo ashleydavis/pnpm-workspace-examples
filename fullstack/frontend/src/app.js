@@ -2,6 +2,12 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 
 //
+// The validation code library is shared between backend and frontend 
+// without being published to npm.
+// 
+const validation = require("validation");
+
+//
 // In a production build you'd want to plugin the location of your production REST API.
 //
 const BASE_URL = "http://localhost:5000";
@@ -29,6 +35,12 @@ export function App() {
     //
     async function onAddNewTodoItem() {
         const newTodoItem = { text: newTodoItemText };
+        const result = validation.validateTodo(newTodoItem);
+        if (!result.valid) {
+            alert(`Validation failed: ${result.message}`);            
+            return;
+        }
+
         await axios.post(`${BASE_URL}/todo`, { todoItem: newTodoItem });
         setTodoList(todoList.concat([ newTodoItem ]));
         setNewTodoItemText("");

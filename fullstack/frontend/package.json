@@ -8,16 +8,17 @@
     "clean": "rm -rf dist .parcel-cache"
   },
   "keywords": [],
-  "author": "",
+  "author": "ashley@codecapers.com.au",
   "license": "MIT",
   "devDependencies": {
     "buffer": "^6.0.3",
-    "parcel": "^2.6.0"
+    "parcel": "^2.6.0"    
   },
   "dependencies": {
     "axios": "^0.27.2",
     "process": "^0.11.10",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "validation": "workspace:*"
   }
 }
