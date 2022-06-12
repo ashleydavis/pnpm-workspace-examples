@@ -2,3 +2,6 @@
 .parcel-cache
 dist
 todo.md
+build
+tsconfig.tsbuildinfo
+.pnpm-debug.log

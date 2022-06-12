@@ -1,0 +1,48 @@
+#
+# Test script for backend HTTP requests.
+#
+
+@base_url = http://localhost:5000
+
+###
+# Adds an item to the todo list.
+#
+
+POST {{base_url}}/todo
+Content-Type: application/json
+
+{
+    "todoItem": {
+        "text": "Put the bins out."
+    }
+}
+
+###
+# Gets the todo list.
+#
+
+GET {{base_url}}/todos
+
+###
+# Test that an invalid todo item is rejected.
+# This should result in status code 400.
+#
+
+POST {{base_url}}/todo
+Content-Type: application/json
+
+{
+}
+
+###
+# Test that a todo item with no text is rejected.
+# This should result in status code 400.
+#
+
+POST {{base_url}}/todo
+Content-Type: application/json
+
+{
+    "todoItem": {}    
+}
+

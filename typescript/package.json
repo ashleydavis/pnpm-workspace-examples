@@ -1,0 +1,15 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "A fullstack example of a pnpm workspace.",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm --stream -r start",
+    "start:dev": "pnpm --stream -r run start:dev",
+    "build": "pnpm --stream -r build",
+    "clean": "rm -rf .parcel-cache && pnpm -r run clean"
+  },
+  "keywords": [],
+  "author": "ashley@codecapers.com.au",
+  "license": "MIT"
+}
