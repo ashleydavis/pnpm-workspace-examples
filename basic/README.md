@@ -1,6 +1,21 @@
-# basic
+# Basic example
 
 The most basic example of a pnpm workspace in a multi-package mono repo.
+
+## Project layout
+
+This project contains a main (root) package and two sub-packages under the `packages` directory.
+
+```
+└───basic
+    ├───packages
+    │   ├───a				Sub-package a.
+    │   └───b				Sub-package b.
+	└───index.js			Code file for the root package.
+	    package.json		Project metadata.
+	 	pnpm-lock.yaml  	Dependencies lockfile.
+ 	    pnpm-workspace.yaml Pnpm workspace configuration.
+```
 
 ## Setup
 

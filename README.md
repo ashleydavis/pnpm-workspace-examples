@@ -1,4 +1,4 @@
-# pnpm-workspace-examples
+# Pnpm workspace examples
 
 Example code showing how to create a multi-package mono repo using pnpm.
 
