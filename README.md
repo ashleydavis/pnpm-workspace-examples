@@ -4,8 +4,6 @@ Example code showing how to create a multi-package mono repo using pnpm.
 
 This code accompanies my upcoming talk and blog post on pnpm. [Follow on Twitter for updates](https://twitter.com/codecapers).
 
-WORK IN PROGRESS
-
 To try out this code clone the code repository using Git:
 
 ```
