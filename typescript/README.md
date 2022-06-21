@@ -7,20 +7,20 @@ There are separate projects for the frontend and backend and a sub-project for v
 ## Project layout
 
 ```
-		
+        
 └───typescript
-	│   package.json		Root project metadata.
-	│	pnpm-lock.yaml  	Dependencies lockfile.
- 	│   pnpm-workspace.yaml Pnpm workspace configuration.
+    │   package.json        Root project metadata.
+    │    pnpm-lock.yaml      Dependencies lockfile.
+    │   pnpm-workspace.yaml Pnpm workspace configuration.
     │ 
-    ├───backend			    The backend example project.
-    │   ├───src				    Source code.
-    │   └───test			    Test files.
-    ├───frontend		    The frontend example project.
-    │   └───src				    Source code.
-    └───packages		
-        └───validation	    A sub-package for validation that 
-            └───src		    is shared between frontend and backend.
+    ├───backend                The backend example project.
+    │   ├───src                    Source code.
+    │   └───test                Test files.
+    ├───frontend            The frontend example project.
+    │   └───src                    Source code.
+    └───packages        
+        └───validation        A sub-package for validation that 
+            └───src            is shared between frontend and backend.
 ```
 
 ## Setup

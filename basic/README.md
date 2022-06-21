@@ -8,13 +8,14 @@ This project contains a main (root) package and two sub-packages under the `pack
 
 ```
 └───basic
+    │   package.json        Root project metadata.
+    │   pnpm-lock.yaml      Dependencies lockfile.
+    │   pnpm-workspace.yaml Pnpm workspace configuration.
+    │ 
     ├───packages
-    │   ├───a				Sub-package a.
-    │   └───b				Sub-package b.
-	└───index.js			Code file for the root package.
-	    package.json		Project metadata.
-	 	pnpm-lock.yaml  	Dependencies lockfile.
- 	    pnpm-workspace.yaml Pnpm workspace configuration.
+    │   ├───a                Sub-package a.
+    │   └───b                Sub-package b.
+    └───index.js            Code file for the root package.
 ```
 
 ## Setup
