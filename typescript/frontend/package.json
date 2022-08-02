@@ -5,14 +5,18 @@
   "scripts": {
     "start": "parcel src/index.html",
     "start:dev": "parcel src/index.html",
-    "clean": "rm -rf dist .parcel-cache"
+    "build": "tsc --incremental",
+    "clean": "rm -rf build tsconfig.tsbuildinfo dist .parcel-cache"
   },
   "keywords": [],
   "author": "ashley@codecapers.com.au",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "buffer": "^6.0.3",
-    "parcel": "^2.6.0"    
+    "parcel": "^2.6.0",
+    "typescript": "^4.7.3"
   },
   "dependencies": {
     "axios": "^0.27.2",
