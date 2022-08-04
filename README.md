@@ -2,11 +2,13 @@
 
 Example code showing how to create a multi-package mono repo using pnpm.
 
-This code accompanies my upcoming talk and blog post on pnpm. [Follow on Twitter for updates](https://twitter.com/codecapers).
+This code accompanies [my talk](https://www.youtube.com/watch?v=FBRUxdmujdo) and [blog post on pnpm](https://www.codecapers.com.au/pnpm-workspaces/). 
+
+[Follow on Twitter for updates](https://twitter.com/codecapers).
 
 To try out this code clone the code repository using Git:
 
-```
+```bash
 git clone https://github.com/ashleydavis/pnpm-workspace-examples.git
 ```
 
