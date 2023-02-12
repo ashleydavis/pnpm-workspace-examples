@@ -5,7 +5,8 @@
     "main": "build/index.js",
     "scripts": {
         "clean": "rm -rf build tsconfig.tsbuildinfo",
-        "build": "tsc --incremental"
+        "build": "tsc --incremental",
+        "start:dev": "tsc -w --incremental"
     },
     "keywords": [],
     "author": "ashley@codecapers.com.au",
